@@ -1,0 +1,46 @@
+<template>
+    <main>
+        <section class="main_screen">
+            <div class="main_img">
+                <img src="../../public/img/site/main.gif" alt="">
+            </div>
+            <div class="main_logo">
+                <svg class="svg_main_logo" viewBox="0 0 675 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="675" height="312" fill="#1E1E1E" />
+                    <rect width="675" height="312" fill="white" />
+                    <path
+                        d="M58.9188 191V121H106.819C123.819 121 131.819 129.1 131.819 139.4C131.819 147.2 127.119 152.2 120.419 154.5C127.919 156.7 134.019 162 134.019 171.7C134.019 182.8 126.119 191 109.019 191H58.9188ZM83.1188 176.9H101.119C106.419 176.9 109.519 173.9 109.519 169.1C109.519 164.6 106.419 161.6 101.119 161.6H83.1188V176.9ZM83.1188 148.2H100.019C104.819 148.2 107.619 145.6 107.619 141.3C107.619 137.3 104.819 134.6 100.019 134.6H83.1188V148.2ZM175.852 191V121H200.152V164.9H200.252L225.852 121H252.252V191H227.952V147.1H227.852L202.352 191H175.852ZM296.692 191V121H321.292V146.6H346.192V121H370.892V191H346.192V162.2H321.292V191H296.692ZM415.286 191V121H439.586V164.9H439.686L465.286 121H491.686V191H467.386V147.1H467.286L441.786 191H415.286ZM532.826 171.5C544.326 170.7 547.726 167.3 548.726 146.1L549.726 121H616.126V191H591.526V137.1H569.926L569.526 148.3C568.226 182.5 558.926 191.5 538.026 191.5H536.426L532.826 171.5Z"
+                        fill="black" />
+                </svg>
+
+                <h1 class="main_title">
+                    ИНТЕРНЕТ-МАГАЗИН<br>ВИНИЛОВЫХ ПЛАСТИНОК
+                </h1>
+            </div>
+        </section>
+
+        <section class="products" data-index-last-sales>
+            <div class="container">
+                <h3 class="products_title">ПОСЛЕДНИЕ ПРОДАЖИ</h3>
+                <!-- CARD LIST -->
+            </div>
+        </section>
+
+        <section class="products" data-index-beset-seller>
+            <div class="container">
+                <h3 class="products_title">ХИТЫ ПРОДАЖ</h3>
+                <!-- CARD LIST -->
+            </div>
+        </section>
+    </main>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style scoped>
+
+</style>

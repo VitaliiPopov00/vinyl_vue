@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Prosto one";
+    src: url("../font/ProstoOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter SemiBold";
+    src: url("../font/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../font/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../font/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("../font/Inter-Medium.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Inter SemiBold', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'Prosto one';
+}
+
+input {
+    outline: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+input:hover {
+    background-color: #ccc;
+    transition: .2s;
+}
+
+input:focus {
+    background-color: #ccc;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 13px;
+}
+
+button {
+    font-family: inherit;
+}
+
+li {
+    list-style-type: none;
+}
