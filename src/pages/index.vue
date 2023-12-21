@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section class="main_screen">
+        <section class="main_screen" ref="mainScreen">
             <div class="main_img">
                 <img src="../../public/img/site/main.gif" alt="">
             </div>
@@ -22,7 +22,9 @@
         <section class="products" data-index-last-sales>
             <div class="container">
                 <h3 class="products_title">ПОСЛЕДНИЕ ПРОДАЖИ</h3>
-                <!-- CARD LIST -->
+                <card-list 
+                    :cards="[]"
+                />
             </div>
         </section>
 
@@ -36,8 +38,24 @@
 </template>
 
 <script>
+    import cardList from '@/components/cardList.vue';
+
     export default {
-        
+        components: {
+            cardList,
+        },
+        methods: {
+            setBasicsCSS() {
+                let height = window.innerHeight - document.querySelector('header').clientHeight;
+    
+                this.$refs.mainScreen.style.height = `${height}px`;
+            },
+        },
+        mounted() {
+            this.setBasicsCSS();
+
+            window.addEventListener('resize', this.setBasicsCSS);
+        }
     }
 </script>
 
